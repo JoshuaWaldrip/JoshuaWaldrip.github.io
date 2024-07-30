@@ -1,0 +1,178 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2a2a2a; /* Gunmetal grey background */
+    color: #fff; /* White text color */
+    max-width: 8.5in; /* Standard PDF width */
+    max-height: 11in; /* Standard PDF height */
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* Header with banner image and text overlay */
+header {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background: url('banner.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+/* Main container with sidebar and content area */
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    box-sizing: border-box;
+    height: calc(135vh - 100px); /* Adjust based on header height */
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px; /* Adjust width as needed */
+    background-color: #000; /* Black background for sidebar */
+    padding: 15px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: calc(132vh - 100px);
+}
+
+.profile-picture {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+    color:#f5ca0a
+}
+
+/* Social media icons */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Main content styles */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #333; /* Slightly lighter grey for content */
+}
+
+/* Box with shadow styles */
+.box-shadow {
+    background-color: #444; /* Slightly lighter grey for boxes */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+/* Quote styles */
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #fff;
+    padding-left: 20px;
+    margin: 0;
+}
+
+footer {
+    text-align: right;
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+/* Education and Work Experience lists */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Video container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto; /* Allow container to grow with content */
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .content {
+        padding: 10px;
+    }
+}
