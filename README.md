@@ -1,1 +1,0 @@
-# JoshuaWaldrip.github.io
