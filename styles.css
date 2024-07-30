@@ -21,7 +21,7 @@ header {
 .banner {
     width: 100%;
     height: 100%;
-    background: url('banner.jpg') no-repeat center center;
+    background: url('docs/assets/Banner.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
 }
