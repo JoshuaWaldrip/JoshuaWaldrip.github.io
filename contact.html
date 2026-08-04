@@ -3,48 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Joshua Waldrip - Multi-Discipline IT Specialist</title>
+    <meta name="description" content="Joshua Waldrip, Multi-Discipline IT Specialist. Hands-on experience across the IT Industry, including: Service Desks, Networks, Cloud Administration, Systems Support, Hardware Repair, and System Administration.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        (function () {
+            try {
+                document.documentElement.setAttribute('data-theme', localStorage.getItem('jw-theme') || 'dark');
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
 </head>
 <body>
-    <header>
-        <div class="banner">
-            <div class="banner-text">Joshua A Waldrip <br> IT SD Analyst</div>
-        </div>
-    </header>
-    <div class="container">
-        <nav class="sidebar">
-            <img src="Profile.jpg" alt="Profile Picture" class="profile-picture">
-            <ul>
-                <li><a href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a></li>
-                <li><a href="skills.html"><ion-icon name="information-circle-outline"></ion-icon> Skills</a></li>
-                <li><a href="contact.html"><ion-icon name="call-outline"></ion-icon> Contact</a></li>
-                <li><a href="downloads.html"><ion-icon name="cloud-download-outline"></ion-icon> Downloads</a></li>
-            </ul>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/joshua-a-waldrip" target="www.linkedin.com/in/joshua-a-waldrip"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a href="https://www.facebook.com/joshua.waldrip" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="https://joshuawaldrip.github.io/downloads.html" target="_blank"><ion-icon name="globe-outline"></ion-icon></a>
-            </div>
+
+<header class="site-header">
+    <div class="nav-wrap">
+        <a href="index.html" class="logo"><span class="bracket">>_</span> joshua.waldrip<span class="cursor"></span></a>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" data-page-file="index.html">Home</a>
+            <a href="skills.html" data-page-file="skills.html">Skills</a>
+            <a href="contact.html" data-page-file="contact.html">Contact</a>
+            <a href="downloads.html" data-page-file="downloads.html">Downloads</a>
         </nav>
-        <main class="content">
-            <section id="quote" class="box-shadow">
-                <blockquote>
-                    <p>Success isn't always about greatness. It's about consistency. Consistent hard work leads to success. Greatness will come."</p>
-                    <footer>- Dwayne Johnson</footer>
-                </blockquote>
-            </section>
-            <section id="education" class="box-shadow">
-                <h2>Contact</h2>
-                <ul>
-                    <li><ion-icon name="phone-portrait-outline"></ion-icon>+1(334)604-9850</li>
-                    <li><ion-icon name="home-outline"></ion-icon>+1(334)930-5095</li>
-                    <li><ion-icon name="mail-outline"></ion-icon>j.a.wwaldrip@gmail.com</li>
-                </ul>
-            </section>
-        </main>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" aria-pressed="false">
+                <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+                <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.5A8.5 8.5 0 1 1 11.5 3a7 7 0 0 0 9.5 9.5Z"/></svg>
+            </button>
+            <button class="nav-burger" id="navBurger" aria-label="Open Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </div>
+</header>
+
+<main>
+    <section class="section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">// CONTACT</span>
+                <h2 class="section-title">Let's connect</h2>
+                <p class="section-lede">I'm quick to respond and always happy to talk shop, tech, or opportunities.</p>
+            </div>
+
+            <div class="contact-grid reveal">
+                <a class="contact-card is-primary" href="https://www.linkedin.com/in/joshua-a-waldrip" target="_blank" rel="noopener">
+          <span class="contact-icon">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </span>
+                    <span>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">joshua-a-waldrip</span>
+            <span class="contact-note">Best for professional inquiries</span>
+          </span>
+                </a>
+
+                <a class="contact-card" href="mailto:j.a.wwaldrip@gmail.com">
+          <span class="contact-icon">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </span>
+                    <span>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">j.a.wwaldrip@gmail.com</span>
+          </span>
+                </a>
+
+                <a class="contact-card" href="tel:+13346049850">
+          <span class="contact-icon">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          </span>
+                    <span>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+1 (334) 604-9850</span>
+          </span>
+                </a>
+
+                <a class="contact-card" href="tel:+16592192344">
+          <span class="contact-icon">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          </span>
+                    <span>
+            <span class="contact-label">Phone (Business)</span>
+            <span class="contact-value">+1 (659) 219-2344</span>
+          </span>
+                </a>
+
+                <a class="contact-card contact-card--centered" href="https://www.facebook.com/joshua.waldrip" target="_blank" rel="noopener">
+          <span class="contact-icon">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </span>
+                    <span>
+            <span class="contact-label">Facebook</span>
+            <span class="contact-value">joshua.waldrip</span>
+          </span>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p class="footer-tag">// BUILT &amp; MAINTAINED by Joshua Waldrip</p>
+        <div class="social-row">
+            <a class="social-link" href="https://www.linkedin.com/in/joshua-a-waldrip" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a class="social-link" href="https://www.facebook.com/joshua.waldrip" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a class="social-link" href="mailto:j.a.wwaldrip@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+        </div>
+        <p class="footer-copy">&copy; 2020–<span id="year"></span> Joshua Waldrip</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>

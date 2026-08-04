@@ -3,79 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Joshua Waldrip - Multi-Discipline IT Specialist</title>
+    <meta name="description" content="Joshua Waldrip, Multi-Discipline IT Specialist. Hands-on experience across the IT Industry, including: Service Desks, Networks, Cloud Administration, Systems Support, Hardware Repair, and System Administration.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        (function () {
+            try {
+                document.documentElement.setAttribute('data-theme', localStorage.getItem('jw-theme') || 'dark');
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
 </head>
 <body>
-    <header>
-        <div class="banner">
-            <div class="banner-text">Joshua A Waldrip <br> IT SD Analyst</div>
-        </div>
-    </header>
-    <div class="container">
-        <nav class="sidebar">
-            <img src="Profile.jpg" alt="Profile Picture" class="profile-picture">
-            <ul>
-                <li><a href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a></li>
-                <li><a href="skills.html"><ion-icon name="information-circle-outline"></ion-icon> Skills</a></li>
-                <li><a href="contact.html"><ion-icon name="call-outline"></ion-icon> Contact</a></li>
-                <li><a href="downloads.html"><ion-icon name="cloud-download-outline"></ion-icon> Downloads</a></li>
-            </ul>
-            <div class="social-links">
-               <a href="https://www.linkedin.com/in/joshua-a-waldrip" target="www.linkedin.com/in/joshua-a-waldrip"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a href="https://www.facebook.com/joshua.waldrip" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="https://joshuawaldrip.github.io/downloads.html" target="_blank"><ion-icon name="globe-outline"></ion-icon></a>
-            </div>
+
+<header class="site-header">
+    <div class="nav-wrap">
+        <a href="index.html" class="logo"><span class="bracket">>_</span> joshua.waldrip<span class="cursor"></span></a>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" data-page-file="index.html">Home</a>
+            <a href="skills.html" data-page-file="skills.html">Skills</a>
+            <a href="contact.html" data-page-file="contact.html">Contact</a>
+            <a href="downloads.html" data-page-file="downloads.html">Downloads</a>
         </nav>
-        <main class="content">
-            <section id="quote" class="box-shadow">
-                <blockquote>
-                    <p>"If money is your hope for independence you will never have it. The only real security that a man will have in this world is a reserve of knowledge, experience, and ability."</p>
-                    <footer>- Henry Ford</footer>
-                </blockquote>
-            </section>
-            <section id="Interpersonal" class="box-shadow">
-                <h2>Interpersonal</h2>
-                <ul>
-                    <li>Communication</li>
-                    <li>Problem Solving</li>
-                    <li>Leadership</li>
-                    <li>Delegation</li>
-                    <li>Problem Solving</li>
-                    <li>Conflict Resolution</li>
-                    <li>Collaberation</li>
-                    <li>Negotiation</li>
-                    <li>Adaptability</li>
-                    <li>Active Listening</li>
-                    <li>Time Management</li>
-                    <li>Dependabilty</li>
-                    <li>Emotional Intelligence</li>
-                </ul>
-            </section>
-            <section id="IT" class="box-shadow">
-                <h2>IT</h2>
-                <ul>
-                    <li>80 wpm</li>
-                    <li>Coding <br>2+ Years</li>
-                    <li>O365 Admin <br>3+ Years</li>
-                    <li>MS Azure <br>3+ Years</li>
-                    <li>O365 <br>10+ Years</li>
-                    <li>Python <br>1+ Years</li>
-                    <li>Active Directory <br>3+ Years</li>
-                    <li>Electronic Repair <br>6+ Years</li>
-                    <li>MAC OS <br>10+ Years</li>
-                    <li>Windows OS <br>10+ Years</li>
-                    <li>Linux OS <br>4+ Years</li>
-                    <li>LAN, DHCP, TCP/IP, VPN <br>3+ Years</li>
-                    <li>Network Support <br>2+ Years</li>
-                    <li>Networking <br>4+ Years</li>
-                    <li>Web Design <br>1 Year</li>
-                    <li>Computer Operation <br>10+ Years</li>
-                </ul>
-            </section>
-        </main>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" aria-pressed="false">
+                <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+                <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.5A8.5 8.5 0 1 1 11.5 3a7 7 0 0 0 9.5 9.5Z"/></svg>
+            </button>
+            <button class="nav-burger" id="navBurger" aria-label="Open Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </div>
+</header>
+
+<main>
+    <section class="section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">// SKILLS.SYS</span>
+                <h2 class="section-title">What I bring to the table</h2>
+                <p class="section-lede">A mix of technical depth and the people skills to match</p>
+            </div>
+            
+            <div class="stat-row reveal">
+                <div class="stat-chip">
+                    <span class="stat-num">80</span>
+                    <span class="stat-label">WPM Typing Speed</span>
+                </div>
+                <div class="stat-chip">
+                    <span class="stat-num">15</span>
+                    <span class="stat-label">Technical Skills</span>
+                </div>
+                <div class="stat-chip">
+                    <span class="stat-num">12</span>
+                    <span class="stat-label">Core Strengths</span>
+                </div>
+            </div>
+            
+            <div class="skill-grid">
+                <div class="skill-category reveal">
+                    <h3>Operating Systems</h3>
+                    <ul class="skill-bars">
+                        <li>
+                            <div class="skill-row"><span>Windows OS</span><span class="skill-years">10+ yrs</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="100"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-row"><span>macOS</span><span class="skill-years">10+ yrs</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="100"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-row"><span>Linux OS</span><span class="skill-years">4+ yrs</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="40"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>Networking &amp; Infrastructure</h3>
+                    <ul class="skill-bars">
+                        <li>
+                            <div class="skill-row"><span>Networking</span><span class="skill-years">4+ yrs</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="40"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-row"><span>Network Support</span><span class="skill-years">2+ yrs</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="20"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-row"><span>LAN / DHCP / TCP-IP / VPN</span><span class="skill-years">3+ yrs</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="30"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-row"><span>Active Directory</span><span class="skill-years">3+ yrs</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="30"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>Cloud &amp; Administration</h3>
+                    <ul class="skill-bars">
+                        <li>
+                            <div class="skill-row"><span>Microsoft 365</span><span class="skill-years">10+ yrs</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="100"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-row"><span>Microsoft 365 Admin</span><span class="skill-years">3+ yrs</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="30"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-row"><span>Microsoft Azure</span><span class="skill-years">3+ yrs</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="30"></div></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category reveal">
+                    <h3>Programming &amp; Web</h3>
+                    <ul class="skill-bars">
+                        <li>
+                            <div class="skill-row"><span>General Coding</span><span class="skill-years">2+ yrs</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="20"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-row"><span>Python</span><span class="skill-years">1+ yr</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="10"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-row"><span>Web Design</span><span class="skill-years">1 yr</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="10"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category skill-category--centered reveal">
+                    <h3>Hardware &amp; Operations</h3>
+                    <ul class="skill-bars">
+                        <li>
+                            <div class="skill-row"><span>Electronic Repair</span><span class="skill-years">6+ yrs</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="60"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-row"><span>Computer Operation</span><span class="skill-years">10+ yrs</span></div>
+                            <div class="bar-track"><div class="bar-fill" data-fill="100"></div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-head reveal" style="margin-bottom:24px;">
+                <span class="eyebrow">// SOFT SKILLS</span>
+                <h2 class="section-title">How I work with people</h2>
+            </div>
+            <div class="tag-cloud reveal">
+                <span class="tag-pill">Communication</span>
+                <span class="tag-pill">Problem Solving</span>
+                <span class="tag-pill">Leadership</span>
+                <span class="tag-pill">Delegation</span>
+                <span class="tag-pill">Conflict Resolution</span>
+                <span class="tag-pill">Collaboration</span>
+                <span class="tag-pill">Negotiation</span>
+                <span class="tag-pill">Adaptability</span>
+                <span class="tag-pill">Active Listening</span>
+                <span class="tag-pill">Time Management</span>
+                <span class="tag-pill">Dependability</span>
+                <span class="tag-pill">Emotional Intelligence</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p class="footer-tag">// BUILT &amp; MAINTAINED by Joshua Waldrip</p>
+        <div class="social-row">
+            <a class="social-link" href="https://www.linkedin.com/in/joshua-a-waldrip" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a class="social-link" href="https://www.facebook.com/joshua.waldrip" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a class="social-link" href="mailto:j.a.wwaldrip@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+        </div>
+        <p class="footer-copy">&copy; 2020–<span id="year"></span> Joshua Waldrip</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
